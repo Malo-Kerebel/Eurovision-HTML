@@ -33,12 +33,14 @@ for i in countries:
         if tmp[-1] > max_value:
             max_value = tmp[-1]
             max_country = i
-        plt.plot(range(len(tmp)), tmp,
+        plt.plot(np.linspace(0, len(tmp)/4, (len(tmp))), tmp,
                  colours[index_colours], label=i.replace('\n', ''))
         index_colours += 1
     else:
-        plt.plot(range(len(tmp)), tmp)
+        plt.plot(np.linspace(0, len(tmp)/4, (len(tmp))), tmp)
 
+plt.xlabel("n° of days")
+plt.ylabel("n° of views")
 plt.legend(loc='upper left')
 # plt.show()
 plt.savefig("view.png", format="png")
@@ -74,11 +76,15 @@ for i in countries:
         if tmp[-1] > max_value:
             max_value = tmp[-1]
             max_country = i
-        plt.plot(range(len(tmp)), tmp,
+        plt.plot(np.linspace(0, len(tmp)/4, (len(tmp))), tmp,
                  colours[index_colours], label=i.replace('\n', ''))
         index_colours += 1
     else:
-        plt.plot(range(len(tmp)), tmp)
+        plt.plot(np.linspace(0, len(tmp)/4, (len(tmp))), tmp)
+
+plt.xlabel("n° of days")
+plt.ylabel("% of change")
+
 plt.legend(loc='upper left')
 # plt.show()
 plt.savefig("rate.png", format="png")
