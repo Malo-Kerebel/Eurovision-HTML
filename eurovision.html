@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Malo Kerebel</title>
+    <link rel="icon" type="image/jpg" href="/pictures/logo.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="meilleur site du monde l'internet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <script>
+      window.addEventListener("keydown", function(event) {
+      	  /* la fonction détecte la touche du clavier présser*/
+      	  var big = 0;
+      	  if (big == 0) {
+      	      if (event.key == "b") {
+      		  document.body.style.backgroundImage = "url('/pictures/big.png')";
+      		  /*Si on appuie sur b on change le fond d'écran*/			
+      	      } else {
+      		  document.body.style.backgroundImage = "url('/pictures/background.png')";
+      		  /*si c'est une autre touche qui est appuyé on met le fond de base*/
+      	      }
+      	  };
+      			
+      }, true);
+    </script>
+
+    <a id="haut">
+      
+      <a id="a_entete" href="/index.html">
+
+	<div id="entete">
+
+	  <img id="logo" src="/pictures/logo.jpg" >
+	  
+	  <h1>Malo Kerebel</h1>
+	  
+	  <p>Étudiant en physique</p>
+	</div>
+
+      </a>
+      
+      <div id="navigation">
+
+	<ul>
+
+	  <li><a href="/index.html">Accueil</a></li>
+
+	  <li><a href="/etudes.html">Études</a></li>
+
+	  <li><a href="/experiences.html">Expériences</a></li>
+
+	  <li><a href="/competences.html">Compétences</a></li>
+	  
+	  <li><a href="/projet.html">Projets personnels</a></li>
+
+	  <li><a href="/blog.html">Blog</a></li>
+
+	</ul>
+
+      </div>
+      
+      <div id="contenu">
+	
+	<h2>Eurovision Statistics</h2>
+
+	<div class="paragraphe">
+
+	  <h3>Youtube views</h3>
+
+	  <p> While, obviously not accurate, the number of views on an Eurovision official song video is a good proxy on how popular and/or trending one of the participant song is. This value does have limits, as populous countries are more likely to have a video with more views as people from a country are the most likely to watch a specific country song. And also different countries have different relation to eurovision, countries more invested in eurovision are more likely to watch their own country eurovision song, and it does benefit song release long ago rather than recent ones.</p>
+
+	  <div class="image">
+	    <img src="view.png">
+	  </div>
+	    
+	  <h3>Rate of change of views</h3>
+
+	  <p>
+	    The rate of change of views is another proxy of how trendy a song is. As it is a percentage of change this metric favors recently released official videos.
+	  </p>
+
+	  <div class="image">
+	    <img src="rate.png">
+	  </div>
+	  
+          <h3> Code and database </h3>
+	  
+	  <p>
+	    This project is fully open source, the source code can be found <a href="https://github.com/Mahkda/Eurovision-HTML"> here </a>. And the raw data used can be found <a href="eurovision.csv"> here </a>.	
+	  </p>
+
+	</div>
+
+      </div>
+
+      <div id="Pied">
+	
+	<ul>		
+	  <li><a href="#haut">haut de la page</a></li>
+	  
+	  <li><a href="/contact.html">contact</a></li>
+
+	  
+	</ul>
+	
+      </div>
+
+  </body>
+</html>
