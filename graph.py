@@ -72,7 +72,6 @@ for i in countries:
     # We only show a legend for the five most viewed videos
     # print(tmp[-1], ">", threshold, "?", tmp[-1] > threshold)
     if (tmp[-1] > threshold):
-        print(tmp[-1], threshold)
         if tmp[-1] > max_value:
             max_value = tmp[-1]
             max_country = i
