@@ -30,3 +30,9 @@ Malta
 Spain
 Iceland
 Portugal
+Cyprus
+Georgia
+Armenia
+Czech Republic
+Azerbaijan
+Latvia
